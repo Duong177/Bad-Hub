@@ -6,8 +6,8 @@ if getgenv().ScriptExecute then return print('Script Already Execute') end
 local start_check_time = tick()
 getgenv().ScriptExecute = true
 repeat task.wait() until game:IsLoaded() and game.Players and game.Players.LocalPlayer  
-if game.CoreGui:FindFirstChild("Mo Mo Be") then
-    game.CoreGui:FindFirstChild("Mo Mo Be"):Destroy()
+if game.CoreGui:FindFirstChild("Obiee") then
+    game.CoreGui:FindFirstChild("Obiee"):Destroy()
 end  
 spawn(function()
     until game.CoreGui:FindFirstChild("Mo Mo Be") 
@@ -19,7 +19,7 @@ getgenv().clonefunc = nil
 local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/x9PSwiftz/Panda/main/Notification.lua"))() 
 local instance = {obj = {}}
 local object = instance.obj
-local HubName = "Tsuo Hub"
+local HubName = "Bad Hub"
 function instance.new(class, properties)
     local inst = Instance.new(class)
     for property, value in next, properties do
@@ -29,7 +29,7 @@ function instance.new(class, properties)
     return inst
 end
 object.TsuoHub = instance.new("ScreenGui", {
-    Name = "Mo Mo Be";
+    Name = "Obiee";
     Parent = game.CoreGui;
     ZIndexBehavior = Enum.ZIndexBehavior.Sibling;
 })
